@@ -3,4 +3,5 @@ Hierbei handelt es sich um einen Zombie-Apocalypse Gamemode für den Grand Theft
 
 Version 1.0.6
 
-Die Entwicklung von „Berkshire Apocalypse" wurde zum Großteil eingestellt und beschränkt sich nur noch auf Bugfixes.   Bugs können unter „Issues" eingereicht werden.
+Die Entwicklung von „Berkshire Apocalypse" wurde zum Großteil eingestellt und beschränkt sich nur noch auf Bugfixes.   
+Bugs können unter „Issues" eingereicht werden.
