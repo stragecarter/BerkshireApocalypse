@@ -3,4 +3,4 @@ Hierbei handelt es sich um einen Zombie-Apocalypse Gamemode für den Grand Theft
 
 Version 1.0.6
 
-Die Entwicklung von „Berkshire Apocalypse" wurde zum Großteil eingestellt und beschränkt sich hauptsächlich nur noch auf Bugfixes. Dass irgendwann erneut ein größeres Update erscheint, ist allerdings nicht komplett ausgeschlossen.
+Die Entwicklung an diesem Gamemode wurde meinerseits eingestellt. Pull requests können eingereicht werden.
