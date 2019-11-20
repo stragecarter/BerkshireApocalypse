@@ -3,5 +3,5 @@ Hierbei handelt es sich um einen Zombie-Apocalypse Gamemode für den Grand Theft
 
 Die Entwicklung an diesem Gamemode wurde meinerseits eingestellt. Pull requests können eingereicht werden.
 
-Erstveröffentlichung: 15.05.2018 - Letztes Update: 15.06.2019   
-Derzeitige Version: Final/Gold 1.0.6
+Erstveröffentlichung: 15.05.2018 - Letztes Update: 20.11.2019   
+Derzeitige Version: Final/Gold 1.0.7
