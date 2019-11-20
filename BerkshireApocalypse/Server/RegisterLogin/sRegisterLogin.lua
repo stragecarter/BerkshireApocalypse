@@ -20,17 +20,18 @@ end)
 
 addEvent("RegisterLogin.server",true)
 addEventHandler("RegisterLogin.server",root,function(type,password)
-	local password = md5(password);
-	
+	local hashedPassword = passwordHash(password,"bcrypt",{});
 	if(type == "Login")then
-		local result = dbPoll(dbQuery(handler,"SELECT * FROM userdata WHERE Username = '"..getPlayerName(client).."' AND Password = '"..password.."'"),-1);
+		local result = dbPoll(dbQuery(handler,"SELECT * FROM userdata WHERE Username = '"..getPlayerName(client).."'"),-1);
 		if(#result >= 1)then
-			RegisterLogin.setDatasAfterLogin(client);
-		else infobox(client,"The password is not correct! If you do not have an account with us, your name is already taken.",255,0,0)end
+			if(passwordVerify(password,hashedPassword))then ;
+				RegisterLogin.setDatasAfterLogin(client);
+			else infobox(client,"The password is not correct! If you do not have an account with us, your name is already taken.",255,0,0)end
+		else infobox(client,"There's no account with this name in our database!",255,0,0)end
 	else
 		local result = dbPoll(dbQuery(handler,"SELECT * FROM userdata WHERE Serial = '"..getPlayerSerial(client).."'"),-1);
 		if(#result == 0)then
-			dbExec(handler,"INSERT INTO userdata (Username,Password,Serial) VALUES ('"..getPlayerName(client).."','"..password.."','"..getPlayerSerial(client).."')");
+			dbExec(handler,"INSERT INTO userdata (Username,Password,Serial) VALUES ('"..getPlayerName(client).."','"..hashedPassword.."','"..getPlayerSerial(client).."')");
 			dbExec(handler,"INSERT INTO achievements (Username) VALUES ('"..getPlayerName(client).."')");
 			dbExec(handler,"INSERT INTO weaponskills (Username) VALUES ('"..getPlayerName(client).."')");
 			RegisterLogin.setDatasAfterLogin(client);
