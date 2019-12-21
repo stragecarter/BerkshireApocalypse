@@ -24,7 +24,7 @@ addEventHandler("RegisterLogin.server",root,function(type,password)
 	if(type == "Login")then
 		local result = dbPoll(dbQuery(handler,"SELECT * FROM userdata WHERE Username = '"..getPlayerName(client).."'"),-1);
 		if(#result >= 1)then
-			if(passwordVerify(password,hashedPassword))then ;
+			if(passwordVerify(password,hashedPassword))then
 				RegisterLogin.setDatasAfterLogin(client);
 			else infobox(client,"The password is not correct! If you do not have an account with us, your name is already taken.",255,0,0)end
 		else infobox(client,"There's no account with this name in our database!",255,0,0)end
