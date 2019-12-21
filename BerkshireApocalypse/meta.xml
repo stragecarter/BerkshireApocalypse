@@ -70,6 +70,37 @@
 	<file src = "Files/Images/Inventory/Trophys.png"/>
 	<file src = "Files/Images/Inventory/Zombieskin.png"/>
 	
+	<file src = "Files/Zombies/13.txd" />
+	<file src = "Files/Zombies/22.txd" />
+	<file src = "Files/Zombies/56.txd" />
+	<file src = "Files/Zombies/67.txd" />
+	<file src = "Files/Zombies/68.txd" />
+	<file src = "Files/Zombies/69.txd" />
+	<file src = "Files/Zombies/70.txd" />
+	<file src = "Files/Zombies/92.txd" />
+	<file src = "Files/Zombies/97.txd" />
+	<file src = "Files/Zombies/105.txd"/>
+	<file src = "Files/Zombies/107.txd"/>
+	<file src = "Files/Zombies/108.txd"/>
+	<file src = "Files/Zombies/126.txd"/>
+	<file src = "Files/Zombies/127.txd"/>
+	<file src = "Files/Zombies/128.txd"/>
+	<file src = "Files/Zombies/152.txd"/>
+	<file src = "Files/Zombies/162.txd"/>
+	<file src = "Files/Zombies/167.txd"/>
+	<file src = "Files/Zombies/188.txd"/>
+	<file src = "Files/Zombies/195.txd"/>
+	<file src = "Files/Zombies/206.txd"/>
+	<file src = "Files/Zombies/209.txd"/>
+	<file src = "Files/Zombies/212.txd"/>
+	<file src = "Files/Zombies/229.txd"/>
+	<file src = "Files/Zombies/230.txd"/>
+	<file src = "Files/Zombies/258.txd"/>
+	<file src = "Files/Zombies/264.txd"/>
+	<file src = "Files/Zombies/277.txd"/>
+	<file src = "Files/Zombies/280.txd"/>
+	<file src = "Files/Zombies/287.txd"/>
+	
 	<file src = "Files/Shader/Blur.fx"/>
 	
 	<file src = "Files/RegisterLogin.mp3"/>
@@ -93,6 +124,9 @@
 	<script src = "sMain.lua"/>
 	<script src = "cMain.lua" type = "client"/>
 	<script src = "smoothMoveCamera.lua" type = "client"/>
+	
+	<script src = "Client/cZombies.lua" type = "client"/>
+	<script src = "Server/sZombies.lua"/>
 
 	<script src = "Client/cGUI.lua" type = "client"/>
 	
