@@ -147,13 +147,17 @@ addEventHandler("onPedWasted",root,function(ammo,attacker,weapon,bodypart)
 			
 			--// Doctor
 			if(getPedSkin(source) == 70)then
-				local pickup = createPickup(x,y,z,3,1240,50);
-				addEventHandler("onPickupHit",pickup,function(player)
-					if(not(isPedInVehicle(player)))then
-						setElementData(player,"Hearts",getElementData(player,"Hearts")+1);
-						destroyElement(source);
-					end
-				end)
+				if(math.random(1,2) == 2)then
+					local pickup = createPickup(x,y,z,3,1240,50);
+					addEventHandler("onPickupHit",pickup,function(player)
+						if(not(isPedInVehicle(player)))then
+							if(getElementData(player,"Hearts") < 2)then
+								setElementData(player,"Hearts",getElementData(player,"Hearts")+1);
+								destroyElement(source);
+							else infobox(player,"You can only have a maximum of two medicines with you!",255,0,0)end
+						end
+					end)
+				end
 			end
 			
 			if(getElementData(attacker,"Zombiekills") >= 1      )then setPlayerAchievement(attacker,2)end
