@@ -9,7 +9,7 @@ local Team = createTeam("eXoApocalypse");
 
 Payday = {};
 RegisterLogin = {};
-local Datas = {"Level","ExperiencePoints","Zombiekills","Team","Teamrang","Deaths","Playingtime","Bonuspoints","Adminlevel","Chests","Hearts","Weeklychest","Weapondepot","BerkshireCoins","EasterEggs","Trophys","LifetimePremium","Zombieskin","Money","Posx","Posy","Posz","Presents"};
+local Datas = {"Level","ExperiencePoints","Zombiekills","Team","Teamrang","Deaths","Playingtime","Bonuspoints","Adminlevel","Chests","Hearts","Weeklychest","Weapondepot","BerkshireCoins","EasterEggs","Trophys","LifetimePremium","Zombieskin","Money","Posx","Posy","Posz","Presents","Keys"};
 
 addEvent("RegisterLogin.checkAccount",true)
 addEventHandler("RegisterLogin.checkAccount",root,function()
