@@ -21,6 +21,8 @@ Peds = {
 	{181,-221.46185302734,2739.3796386719,62.6875,180,"Weapon Shop","Weaponshop.createWindow"},
 	-- Carhouses
 	{59,-1957.8000488281,307.89999389648,35.5,180,"Wang Cars","Carhouse.showInfobox"},
+	-- Reporterberg
+	{312,-2532.0510253906,-624.38592529297,132.74740600586,318.001373,"Safes","Safes.openWindow"},
 };
 
 for _,v in pairs(Peds)do
