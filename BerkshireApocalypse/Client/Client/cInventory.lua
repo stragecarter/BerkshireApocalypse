@@ -7,7 +7,7 @@
 
 Inventory = {state = false, scroll = 0, text = "Inventory",
 	["Items"] = {
-		"Bonuspoints","Chests","Hearts","BerkshireCoins","Trophys","Zombieskin",
+		"Bonuspoints","Chests","Hearts","BerkshireCoins","Trophys","Zombieskin","Keys",
 	},
 	["Slots"] = {
 		{508, 403, 52, 49},
