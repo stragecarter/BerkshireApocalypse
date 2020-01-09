@@ -9,6 +9,7 @@ Savezones = {
 	-- x, y, width, height
 	{-2003.8505859375,76.118301391602,60,135}, -- San Fierro
 	{-250.89590454102,2706.7004394531,60,40}, -- Chicken Valley
+	{-2538.1003417969,-624.95239257813,50,30}, -- Reporterberg
 };
 
 for _,v in pairs(Savezones)do
