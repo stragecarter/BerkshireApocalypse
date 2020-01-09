@@ -22,13 +22,19 @@ function dxDrawHUD()
 		local Armor = getPedArmor(localPlayer);
 		local level = getElementData(localPlayer,"Level")+1;
 		local experiencePoints = getElementData(localPlayer,"ExperiencePoints");
-			
+
 		local time = getRealTime();
-			
+		local day,monat,year = time.monthday,time.month+1,time.year+1900;
+		local hour,minute = time.hour,time.minute;
+		if(day < 10)then day = "0"..day end
+		if(monat < 10)then monat = "0"..monat end
+		if(hour < 10)then hour = "0"..hour end
+		if(minute < 10)then minute = "0"..minute end
+		
 		dxDrawRectangle(1086*(x/1440), y1*(y/900), 344*(x/1440), 41*(y/900), tocolor(17, 17, 17, 200), false)
 		dxDrawRectangle(1086*(x/1440), y1*(y/900), 344*(x/1440), 10*(y/900), tocolor(17, 17, 17, 255), false)
-		dxDrawText(time.monthday.. "." ..time.month+1 .. "." ..time.year+1900 , 1096*(x/1440), y1+10*(y/900), 1268*(x/1440), 52*(y/900), tocolor(255, 255, 255, 255), 1.00, NewFont, "left", "center", false, false, false, false, false)
-		dxDrawText(time.hour.. ":" ..time.minute.." Uhr", 1319*(x/1440), y1+10*(y/900), 1420*(x/1440), 52*(y/900), tocolor(255, 255, 255, 255), 1.00, NewFont, "right", "center", false, false, false, false, false)
+		dxDrawText(day.."."..monat.."."..year, 1096*(x/1440), y1+10*(y/900), 1268*(x/1440), 52*(y/900), tocolor(255, 255, 255, 255), 1.00, NewFont, "left", "center", false, false, false, false, false)
+		dxDrawText(hour.. ":" ..minute.." Uhr", 1319*(x/1440), y1+10*(y/900), 1420*(x/1440), 52*(y/900), tocolor(255, 255, 255, 255), 1.00, NewFont, "right", "center", false, false, false, false, false)
 		dxDrawRectangle(1086*(x/1440), y1+179*(y/900), 344*(x/1440), 10*(y/900), tocolor(17, 17, 17, 255), false)
 		dxDrawRectangle(1086*(x/1440), y1+51*(y/900), 344*(x/1440), 10*(y/900), tocolor(17, 17, 17, 255), false)
 		dxDrawRectangle(1086*(x/1440), y1+74*(y/900), 296*(x/1440), 11*(y/900), tocolor(179, 0, 0, 200), false)
