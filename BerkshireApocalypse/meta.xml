@@ -69,6 +69,7 @@
 	<file src = "Files/Images/Inventory/BerkshireCoins.png"/>
 	<file src = "Files/Images/Inventory/Trophys.png"/>
 	<file src = "Files/Images/Inventory/Zombieskin.png"/>
+	<file src = "Files/Images/Inventory/Keys.png"/>
 	
 	<file src = "Files/Zombies/13.txd" />
 	<file src = "Files/Zombies/22.txd" />
@@ -158,6 +159,7 @@
 	<script src = "Server/Systems/sWeaponskills.lua"/>
 	<script src = "Server/Systems/sInventory.lua"/>
 	<script src = "Server/Systems/sHouses.lua"/>
+	<script src = "Server/Systems/sSafes.lua"/>
 	
 	<script src = "Client/Systems/cWeather.lua" type = "client"/>
 	<script src = "Client/Systems/cWeapondepot.lua" type = "client"/>
@@ -167,6 +169,7 @@
 	<script src = "Client/Systems/cAchievements.lua" type = "client"/>
 	<script src = "Client/Systems/cSavezones.lua" type = "client"/>
 	<script src = "Client/Systems/cHouses.lua" type = "client"/>
+	<script src = "Client/Systems/cSafes.lua" type = "client"/>
 	
 	<!-- Shops -->
 	<script src = "Server/Shops/sCoinshop.lua"/>

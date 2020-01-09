@@ -5,9 +5,10 @@
 	
 ]]--
 
-createBlip(-1968.5,114.30000305176,27.700000762939,6,0,0,0,0,0,0,100,root);  -- Weaponshop SF
+createBlip(-1968.5,114.30000305176,27.700000762939,6,0,0,0,0,0,0,100,root); -- Weaponshop SF
 createBlip(-221.46185302734,2739.3796386719,62.6875,6,0,0,0,0,0,0,100,root); -- Weaponshop Chicken Valley
-createBlip(-1957.8000488281,307.89999389648,35.5,55,0,0,0,0,0,0,100,root);   -- Wang Cars
+createBlip(-1957.8000488281,307.89999389648,35.5,55,0,0,0,0,0,0,100,root); -- Wang Cars
+createBlip(-2532.0510253906,-624.38592529297,132.74740600586,25,0,0,0,0,0,0,100,root); -- Safes
 	
 Main = {};
 
@@ -110,6 +111,13 @@ addEventHandler("onPedWasted",root,function(ammo,attacker,weapon,bodypart)
 				end)
 			end
 			
+			if(bodypart == 9 and math.random(1,1000) == 500)then
+				if(getElementData(attacker,"Keys") <= 5)then
+					setElementData(attacker,"Keys",getElementData(attacker,"Keys")+1);
+					infobox(attacker,"You got a key!",0,255,0);
+				end
+			end
+			
 			--// Fireman explosion
 			if(getPedSkin(source) == 277)then createExplosion(x,y,z,3) end
 			
@@ -207,5 +215,24 @@ addCommandHandler("pay",function(player,cmd,target,money)
 				end
 			else infobox(player,"You don't have enough money!",255,0,0)end
 		else infobox(player,"Use /pay [Player], [Money]!",255,0,0)end
+	end
+end)
+
+--// Klicksystem
+addEventHandler("onElementClicked",root,function(button,state,player)
+	if(button == "left" and state == "down")then
+		local x,y,z = getElementPosition(source);
+		if(getDistanceBetweenPoints3D(x,y,z,getElementPosition(player)) <= 7.5)then
+			if(getElementData(source,"Safe") == true)then
+				if(getElementModel(source) == 2332)then
+					if(getElementData(player,"Keys") >= 1)then
+						setElementData(player,"Keys",getElementData(player,"Keys")-1);
+						Weaponshop.giveRandomWeapon(player);
+						setElementData(source,"Safe",false);
+						setElementModel(source,2003);
+					else infobox(player,"You don't have enough keys!",255,0,0)end
+				else infobox(player,"This safe was already opened yet!",255,0,0)end
+			end
+		end
 	end
 end)
