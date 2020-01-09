@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 15. Jun 2019 um 05:29
+-- Erstellungszeit: 09. Jan 2020 um 16:43
 -- Server-Version: 10.1.32-MariaDB
 -- PHP-Version: 7.2.5
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `apocalypse`
+-- Datenbank: `berkshireapocalypse`
 --
 
 -- --------------------------------------------------------
@@ -69,16 +69,6 @@ CREATE TABLE `houses` (
   `Owner` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `Price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Daten für Tabelle `houses`
---
-
-INSERT INTO `houses` (`ID`, `Spawnx`, `Spawny`, `Spawnz`, `Owner`, `Price`) VALUES
-(1, '-2032.974609375', '161.41015625', '29.046106338501', 'Niemand', 350000),
-(2, '-2172.4619140625', '251.96484375', '35.339275360107', 'Niemand', 400000),
-(3, '-2273.0634765625', '40.2197265625', '35.3125', 'Niemand', 50000),
-(4, '-2178.6494140625', '-42.33984375', '35.3203125', 'Niemand', 90000);
 
 -- --------------------------------------------------------
 
@@ -176,7 +166,8 @@ CREATE TABLE `userdata` (
   `Posx` varchar(50) NOT NULL DEFAULT '-1963.5256347656',
   `Posy` varchar(50) NOT NULL DEFAULT '127.15285491943',
   `Posz` varchar(50) NOT NULL DEFAULT '27.6875',
-  `Presents` int(11) NOT NULL DEFAULT '0'
+  `Presents` int(11) NOT NULL DEFAULT '0',
+  `Keys` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -329,7 +320,7 @@ ALTER TABLE `bans`
 -- AUTO_INCREMENT für Tabelle `houses`
 --
 ALTER TABLE `houses`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT für Tabelle `logout`
