@@ -4,5 +4,3 @@ Die **aktive Weiterentwicklung** von diesem Gamemode wurde eingestellt.
 
 Erstveröffentlichung: 15.05.2018 - Letztes Update: 09.01.2020   
 Derzeitige Version: Final/Gold 1.1.0
-
-Entwickelt von xendomrayden.
