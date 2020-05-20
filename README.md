@@ -1,6 +1,23 @@
-### Berkshire Apocalypse
-Hierbei handelt es sich um einen Zombie-Apocalypse Gamemode für den Grand Theft Auto: San Andreas Multiplayer-Mod Multi Theft Auto. Genauere Informationen zu dem Inhalt des Scripts erhält man im Wiki.   
-Die **aktive Weiterentwicklung** von diesem Gamemode wurde eingestellt.
+<h1 align = "center">Berkshire Apocalypse</h1>
 
-Erstveröffentlichung: 15.05.2018 - Letztes Update: 09.01.2020   
-Derzeitige Version: Final/Gold 1.1.0
+<p align = "center">
+  <a href = "https://github.com/raydNDev/BerkshireApocalypse/commits/master" title = "Last Commit"><img src = "https://img.shields.io/github/last-commit/raydNDev/BerkshireApocalypse?style=flat"></a>
+  <a href = "https://github.com/raydNDev/BerkshireApocalypse/issues" title = "Open Issues"><img src = "https://img.shields.io/github/issues/raydNDev/BerkshireApocalypse?style=flat"></a>
+</p>
+
+<p align = "center">
+  <a href = "#entwicklung">Entwicklung</a> •
+  <a href = "#inhalt">Inhalt</a> •
+  <a href = "#installation">Installation</a> •
+  <a href = "#updates">Updates</a>
+</p>
+
+## Entwicklung
+<p align = "justify">Die Entwicklung an Berkshire Apocalypse begann im März 2018. In wenigen Tagen wurde das Grundgerüst entwickelt, welches anschließend einige Wochen weiterentwickelt wurde. Der Gamemode wurde anschließend im Mai veröffentlicht. Zwischen Februar 2019 und Januar 2020 folgten weitere Updates, mittlerweile wurde die Weiterentwicklung von Berkshire Apocalypse allerdings eingestellt.
+
+Veröffentlichung: 15.05.2018 - Letztes Update: 09.01.2020
+Derzeitige Version: Final / Gold 1.1.0
+</p>
+
+## Inhalt
+<p align = "justify">Erledige Zombies, sammel Geld und Erfahrungspunkte und erweitere dein Waffenarsenal. Gründe ein Team, kauft einen Unterschlupf und Fahrzeuge, um gemeinsam in den Kampf gegen die Zombies zu ziehen! Sammel Berkshire-Coins, mit denen du dir exklusive Artikel wie z.B. einen Zombie-Skin oder einen aktiven Premiumstatus kaufen kannst. Sammel Achievements und erreiche die Spitze der Rangliste! Und am besten wirst du dabei nicht gebissen..</p>
