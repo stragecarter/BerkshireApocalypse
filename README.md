@@ -23,7 +23,7 @@ Derzeitige Version: Final / Gold 1.1.0
 <p align = "justify">Erledige Zombies, sammel Geld und Erfahrungspunkte und erweitere dein Waffenarsenal. Gründe ein Team, kauft einen Unterschlupf und Fahrzeuge, um gemeinsam in den Kampf gegen die Zombies zu ziehen! Sammel Berkshire-Coins, mit denen du dir exklusive Artikel wie z.B. einen Zombie-Skin oder einen aktiven Premiumstatus kaufen kannst. Sammel Achievements und erreiche die Spitze der Rangliste! Und am besten wirst du dabei nicht gebissen..</p>
 
 ## Installation
-<p align = "justify">Da der Gamemode mit den internen MTA-Datenbankfunktionen arbeitet, wird kein MySQL-Modul benötigt. Der Ordner 'BerkshireApocalypse' muss nach 'Programme(x86)/MTA San Andreas 1.x)/server/mods/deathmatch/resources'. Anschließend muss die Datenbank 'berkshireapocalypsq.sql' hochgeladen werden und die Datenbankdaten müssen unter 'sMain.lua' => Zeile 14 eingetragen werden.</p>
+<p align = "justify">Da der Gamemode mit den internen MTA-Datenbankfunktionen arbeitet, wird kein MySQL-Modul benötigt. Der Ordner 'BerkshireApocalypse' muss nach 'Programme(x86)/MTA San Andreas 1.x)/server/mods/deathmatch/resources'. Anschließend muss die Datenbank 'berkshireapocalypse.sql' hochgeladen werden und die Datenbankdaten müssen unter 'sMain.lua' => Zeile 14 eingetragen werden.</p>
 
 ## Updates
 <p align = "justify">Alle bisherigen Updates können im <a href = "https://github.com/raydNDev/BerkshireApocalypse/wiki/Updates">Wiki unter Updates</a> eingesehen werden.</p>
