@@ -13,7 +13,7 @@
 </p>
 
 ## Entwicklung
-<p align = "justify">Die Entwicklung an Berkshire Apocalypse begann im März 2018. In wenigen Tagen wurde das Grundgerüst entwickelt, welches anschließend einige Wochen weiterentwickelt wurde. Der Gamemode wurde anschließend im Mai veröffentlicht. Zwischen Februar 2019 und Januar 2020 folgten weitere Updates, mittlerweile wurde die aktive Weiterentwicklung von Berkshire Apocalypse allerdings eingestellt.
+<p align = "justify">Die Entwicklung an Berkshire Apocalypse begann im März 2018. In wenigen Tagen wurde das Grundgerüst entwickelt, welches anschließend einige Wochen weiterentwickelt wurde. Der Gamemode wurde anschließend im Mai veröffentlicht. Zwischen Februar 2019 und Januar 2020 folgten weitere Updates, mittlerweile wurde die Weiterentwicklung von Berkshire Apocalypse allerdings eingestellt. Der Support wurde ebenfalls eingestellt.
 
 Veröffentlichung: 15.05.2018 - Letztes Update: 09.01.2020
 Derzeitige Version: Final / Gold 1.1.0
